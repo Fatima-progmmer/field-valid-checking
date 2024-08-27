@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Field Valid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="plane">
+                <p>📧</p>
+            </div>
+            <div class="input-group">
+                <label> Full Name</label>
+                <input type="text" placeholder="Enter Your Name" id="contact-name" onkeyup="validateName()">
+                <span id="Name-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label> Phone No</label>
+                <input type="tel" placeholder="123 456 7890" id="contact-tel" onkeyup="validateTel()">
+                <span id="tel-error"></span>
+            </div>
+            <div class="input-group">
+                <label>Email Id</label>
+                <input type="text" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+                <span id="Email-error"></span>
+            </div>
+            <div class="input-group">
+                <label>Your Message</label>
+                <textarea row="5" placeholder="Enter Your  Message" id="contact-msg" onkeyup="validateMsg()"></textarea>
+                <span id="Message-error"></span>
+            </div>
+            <button onclick="return validateForm()">Submit</button>
+            <span id="Submit-error"></span>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
